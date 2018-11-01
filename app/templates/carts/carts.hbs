@@ -1,0 +1,8 @@
+<h3>Welcome to carts Page!!</h3>
+{{#each model as |cart|}}
+  <p>{{#link-to "carts.cart" cart tagName="button"}}
+    Cart number {{cart.id}} for {{cart.name}}
+  {{/link-to}}</p>
+{{/each}}
+
+{{outlet}}
